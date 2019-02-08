@@ -6,7 +6,7 @@ class SmallPanel extends Component {
   getContactInfo(key) {
     return (
       <li key={key}>
-        <div className="list-icon">
+        <div className="list-icon text-center">
           <i className={"mr-2 fa fa-" + key}></i>
         </div>
         <span>{this.props.data.contact[key]}</span>

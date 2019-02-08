@@ -22,7 +22,7 @@ class Footer extends Component {
             <div key={item.position} className="mb-2">
                 <div className="row">
                     <big className="col-8"><strong>{item.position}</strong></big>
-                    <div className="col-3">{item.time}</div>
+                    <div className="col-4 text-right">{item.time}</div>
                 </div>
                 <div><strong>Company: </strong>{item.company}</div>
             </div>
@@ -35,7 +35,7 @@ class Footer extends Component {
             <div key={item.name} className="mb-2">
                 <div className="row">
                     <big className="col-8"><strong>{item.name}</strong></big>
-                    <div className="col-3">{item.time}</div>
+                    <div className="col-4 text-right">{item.time}</div>
                 </div>
                 <div><strong>University: </strong>{item.university}</div>
                 <small><strong>Faculty: </strong>{item.faculty}</small>
