@@ -1,0 +1,12 @@
+.small-panel {
+    margin-top: 80px;
+}
+.list-icon {
+    display: inline-block;
+    width: 35px;
+    font-size: 25px;
+}
+.fa-star, .fa-star-o, .fa-star-half-o {
+    color: #0096ff;
+    margin-left: 5px;
+}
