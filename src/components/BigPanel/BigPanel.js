@@ -5,7 +5,7 @@ class Footer extends Component {
 
     getProjectItem(item) {
         return (
-            <div key={item.title} className="mb-3">
+            <div key={item.title} className="mb-2">
                 <big><strong>{item.title}</strong></big>
                 <div><strong>Description: </strong>{item.description}</div>
                 {item.demo && <div><strong>Demo: </strong> <a href={item.demo}>{item.demo}</a></div>}
@@ -19,7 +19,7 @@ class Footer extends Component {
 
     getExperienceItem(item) {
         return (
-            <div key={item.position} className="mb-3">
+            <div key={item.position} className="mb-2">
                 <div className="row">
                     <big className="col-8"><strong>{item.position}</strong></big>
                     <div className="col-3">{item.time}</div>
@@ -32,7 +32,7 @@ class Footer extends Component {
 
     getEducationItem(item) {
         return (
-            <div key={item.name} className="mb-3">
+            <div key={item.name} className="mb-2">
                 <div className="row">
                     <big className="col-8"><strong>{item.name}</strong></big>
                     <div className="col-3">{item.time}</div>
@@ -47,7 +47,7 @@ class Footer extends Component {
         return (
             <div className="big-panel">
                 <h4>Soft Skills</h4>
-                {this.props.data.softSkills.map(item => <h6 key={item}><strong>{item}</strong></h6>)}
+                {this.props.data.softSkills.map(item => <div key={item}><strong>{item}</strong></div>)}
                 <h4>Projects</h4>
                 {this.props.data.projects.map(item => this.getProjectItem(item))}
                 <h4>Experience</h4>
