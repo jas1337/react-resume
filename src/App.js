@@ -3,6 +3,7 @@ import './App.css';
 import data from './data/myData';
 import Header from './components/Header/Header'
 import SmallPanel from './components/SmallPanel/SmallPanel'
+import BigPanel from './components/BigPanel/BigPanel'
 import Footer from './components/Footer/Footer'
 
 class App extends Component {
@@ -16,7 +17,7 @@ class App extends Component {
               <SmallPanel data={data} />
             </div>
             <div className="col-8">
-              asddas
+              <BigPanel data={data} />
             </div>
           </div>
           <Footer />

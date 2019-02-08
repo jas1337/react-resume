@@ -6,8 +6,8 @@ class Header extends Component {
   render() {
     return (
       <header className="row topbar">
-        <div className="col-4">
-          <img className="portrait" src={portrait} />
+        <div className="col-4 portrait-container">
+          <img className="portrait" src={portrait} alt="portrait" />
         </div>
         <div className="col-8 p-3">
           <h3 className="mt-2">{this.props.data.name}</h3>

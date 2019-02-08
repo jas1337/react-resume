@@ -29,22 +29,22 @@ class SmallPanel extends Component {
         {offset && <div className="offset-1"></div>}
         <div className={offset ? "col-6" : "col-7"}>{item.name}</div>
         <div className="col-5 text-right">
-          <ul>{this.getStars(item.rate)}</ul>
+          {this.getStars(item)}
         </div>
       </div>
     );
   }
 
-  getStars(rate) {
+  getStars(item) {
     const total = 5;
-    const half = !Number.isInteger(rate) ? 1 : 0;
-    const stars = parseInt(rate)
+    const half = !Number.isInteger(item.rate) ? 1 : 0;
+    const stars = parseInt(item.rate)
     const empty = total - stars - half;
     let starsArray = [];
 
-    for (let i = 0; i < stars; i++) { starsArray.push(<i className="fa fa-star"></i>) };
-    if (half) starsArray.push(<i className="fa fa-star-half-o"></i>);
-    for (let i = 0; i < empty; i++) { starsArray.push(<i className="fa fa-star-o"></i>) };
+    for (let i = 0; i < stars; i++) { starsArray.push(<i key={item.name + i} className="fa fa-star"></i>) };
+    if (half) starsArray.push(<i key={item.name + stars + half} className="fa fa-star-half-o"></i>);
+    for (let i = 0; i < empty; i++) { starsArray.push(<i key={item.name + stars + half + i} className="fa fa-star-o"></i>) };
 
     return (
       <span>
@@ -54,7 +54,6 @@ class SmallPanel extends Component {
   }
 
   render() {
-
     return (
       <div className="small-panel">
         <h4>Contact</h4>
@@ -65,7 +64,7 @@ class SmallPanel extends Component {
         <ul>{this.props.data.languages.map(item => this.getProgrammingSkillItem(item))}</ul>
         <h4>Hobbies</h4>
         <div className="row">
-          {this.props.data.hobbies.map(item => <div className="col-6">{item}</div>)}
+          {this.props.data.hobbies.map(item => <div key={item} className="col-6">{item}</div>)}
         </div>
       </div>
     );
