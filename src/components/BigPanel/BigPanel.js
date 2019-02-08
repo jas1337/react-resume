@@ -46,13 +46,13 @@ class Footer extends Component {
     render() {
         return (
             <div className="big-panel">
-                <h4>Soft Skills</h4>
+                <h5>Soft Skills</h5>
                 {this.props.data.softSkills.map(item => <div key={item}><strong>{item}</strong></div>)}
-                <h4>Projects</h4>
+                <h5>Projects</h5>
                 {this.props.data.projects.map(item => this.getProjectItem(item))}
-                <h4>Experience</h4>
+                <h5>Experience</h5>
                 {this.props.data.experience.map(item => this.getExperienceItem(item))}
-                <h4>Education</h4>
+                <h5>Education</h5>
                 {this.props.data.education.map(item => this.getEducationItem(item))}
             </div>
         );
