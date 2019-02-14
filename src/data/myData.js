@@ -134,15 +134,21 @@ const myData = {
     ],
     projects: [
         {
-            title: 'Screen9 Onyx Player',
-            description: 'Custom video player based on Flowplayer, integrated with Screen9 media management system.',
-            technologies: ['Flowplayer', 'HTML5', 'CSS3', 'Less'],
+            title: 'Screen9 Chat Client',
+            description: 'Application for adding and managing comments related to media from Screen9 system.',
+            technologies: ['websockets', 'HTML5', 'CSS3', 'Sass', 'React.js', 'Redux', 'microservices', 'oAuth2', 'Webpack', 'Jest', 'Jasmine', 'Captcha'],
             demo: ''
         },
         {
+            title: 'Screen9 Onyx Player',
+            description: 'Custom video player based on Flowplayer, integrated with Screen9 media management system.',
+            technologies: ['Flowplayer', 'HTML5', 'CSS3', 'Less', 'microservices'],
+            demo: ''
+        },       
+        {
             title: 'Screen9 Console',
             description: 'Platform for managing media in Screen9 system. Allows uploading, editing media on demand, creating live and livemixer events, generating media embed codes, gather media statistics data and much more. ',
-            technologies: ['Angular.js', 'JavaScript ES6', 'Bootstrap 2.2.0', 'Less', 'oAuth2', 'Google Analytics', 'Gulp', 'Webpack', 'Bower', 'Karma', 'npm', 'ESLint', 'Babel', 'REST API', 'XML-RPC', 'Jenkins', 'Nightwatch', 'Websocket', 'JsDoc'],
+            technologies: ['Angular.js', 'JavaScript ES6', 'Bootstrap 2.2.0', 'Less', 'oAuth2', 'microservices', 'Google Analytics', 'Gulp', 'Webpack', 'Bower', 'Karma', 'npm', 'ESLint', 'Babel', 'REST API', 'XML-RPC', 'Jenkins', 'Nightwatch', 'Websocket', 'JsDoc'],
             demo: ''
         },
         {
