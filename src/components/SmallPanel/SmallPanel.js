@@ -56,16 +56,22 @@ class SmallPanel extends Component {
   render() {
     return (
       <div className="small-panel">
-        <h5>Contact</h5>
+        <h5>Contact info</h5>
         <ul>{Object.keys(this.props.data.contact).map(key => this.getContactInfo(key))}</ul>
-        <h5>Programing Skills</h5>
+        <h5>Favorite technologies</h5>
         <ul>{Object.keys(this.props.data.programingSkills).map(key => this.getProgrammingSkill(key))}</ul>
         <h5>Languages</h5>
-        <ul>{this.props.data.languages.map(item => this.getProgrammingSkillItem(item))}</ul>
-        <h5>Hobbies</h5>
-        <div className="row">
-          {this.props.data.hobbies.map(item => <div key={item} className="col-6">{item}</div>)}
-        </div>
+        <ul>
+          {this.props.data.languages.map(item => 
+            <div className="row" key={item.name}>
+              <div className="offset-1"></div>
+              <div className="col-6">{item.name}</div>
+              <div className="col-5 text-right">
+                {item.rate}
+              </div>
+            </div>
+          )}
+        </ul>
       </div>
     );
   }

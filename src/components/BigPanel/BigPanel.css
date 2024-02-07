@@ -2,3 +2,8 @@
     border-left: 1px solid;
     padding-left: 15px;
 }
+
+.fa-chevron-right {
+    color: #0096ff;
+    margin-right: 5px;
+}
