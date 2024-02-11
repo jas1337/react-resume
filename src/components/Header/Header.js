@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import portrait from "../../static/img/portrait.png";
+import portrait from "../../static/img/portrait3.jpg";
 import "./Header.css";
 
 class Header extends Component {

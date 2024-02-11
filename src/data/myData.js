@@ -146,7 +146,7 @@ const myData = {
             ]
         },
         {
-            title: "Screen9 Chat Client",
+            title: "Screen9 Live Chat Client",
             description:
                 "Application used for adding and moderating comments during live streams in Screen9 system.",
             technologies: [
@@ -211,14 +211,14 @@ const myData = {
             time: "06/2019 – Present",
             responsibilities: [
                 "Conducted deployment of application to production environment on Google Cloud Platform",
-                "Provided high quality solutions for Front end application issues using Polymer & LitElements Components and Material UI styles",
+                "Provided high quality solutions for Front-end application issues using Polymer & LitElements Components and Material UI styles",
                 "Designed and implemented functionalities based on mockups provided by ux designer in InVision",
                 "Prepared technical design document for upcoming functionalities",
                 "Created Web Component Tests for new and existing components using Mocha framework",
                 "Covered new functionalities with unit tests",
                 "Performed Developer testing",
                 "Reviewed and approved changelists of colleagues from all teams across the project",
-                "Played team leader and scrum master role of team consisting of 12 software engineers",
+                "Played Team Leader and Scrum Master role of team consisting of 12 software engineers",
                 "Represented the team at management meetings on daily basis",
                 "Planned and coordinated the work of scrum team",
                 "Participated in meetings with the client",
@@ -276,8 +276,8 @@ const myData = {
             responsibilities: [
                 "Creating geometry database",
                 "First break picking",
-                "Signal to noice enhancement",
-                "Enhancement of resolution",
+                "signal to noice enhancement",
+                "Eenhancement of resolution",
                 "Static corrections",
                 "Veolocity analysis",
                 "5D Interpolation and regularization",

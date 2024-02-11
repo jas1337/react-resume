@@ -6,7 +6,9 @@
     width: 35px;
     font-size: 25px;
 }
-.fa-star, .fa-star-o, .fa-star-half-o {
+.fa-star,
+.fa-star-o,
+.fa-star-half-o {
     color: #0096ff;
     margin-left: 5px;
 }
